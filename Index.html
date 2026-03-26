@@ -2,44 +2,58 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Nexus Ascension</title>
+  <title>My Manhua Site</title>
+
   <style>
     body {
       margin: 0;
+      font-family: Arial;
       background: #0d0d0d;
       color: white;
-      font-family: Arial, sans-serif;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      background: #111;
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    .title {
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    /* MANHUA LIST */
+    .container {
+      padding: 20px;
       text-align: center;
     }
 
-    header {
-      padding: 20px;
-      font-size: 28px;
-      font-weight: bold;
-      background: black;
-      border-bottom: 2px solid #222;
-    }
-
-    .chapter-list {
-      padding: 20px;
-    }
-
-    .chapter {
+    .card {
       background: #1a1a1a;
-      margin: 10px auto;
-      padding: 15px;
+      margin: 15px auto;
+      padding: 20px;
       width: 90%;
-      max-width: 500px;
+      max-width: 400px;
       border-radius: 10px;
     }
 
-    .chapter a {
+    .card a {
       color: white;
       text-decoration: none;
       font-size: 18px;
     }
 
-    .chapter:hover {
+    .card:hover {
       background: #333;
     }
   </style>
@@ -47,17 +61,24 @@
 
 <body>
 
-<header>
-  Nexus Ascension
-</header>
+<!-- NAVBAR -->
+<div class="navbar">
+  <div class="title">Manhua World</div>
+  <div>
+    <a href="index.html">Home</a>
+  </div>
+</div>
 
-<div class="chapter-list">
-  <div class="chapter">
-    <a href="chapter1.html">Chapter 1</a>
+<!-- CONTENT -->
+<div class="container">
+
+  <div class="card">
+    <a href="nexus/index.html">Nexus Ascension</a>
   </div>
 
-  <!-- Add more chapters like this -->
-  <!-- <div class="chapter"><a href="chapter2.html">Chapter 2</a></div> -->
+  <div class="card">
+    <a href="shadowking/index.html">Shadow King</a>
+  </div>
 
 </div>
 
