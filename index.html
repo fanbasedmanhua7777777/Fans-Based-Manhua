@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fans Based Manhua</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0d0d0d;
+      color: white;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      background: #111;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #222;
+    }
+
+    .title {
+      font-size: 22px;
+      font-weight: bold;
+      color: #00d4ff;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin-left: 15px;
+      font-size: 15px;
+      transition: 0.3s;
+    }
+
+    .navbar a:hover {
+      color: #00d4ff;
+    }
+
+    /* HEADER */
+    .header {
+      text-align: center;
+      padding: 30px 10px 10px;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    .header p {
+      color: #aaa;
+      font-size: 14px;
+    }
+
+    /* CONTAINER */
+    .container {
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    /* CARD */
+    .card {
+      background: #1a1a1a;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      transition: 0.3s ease;
+      border: 1px solid #222;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      background: #222;
+      border-color: #00d4ff;
+    }
+
+    .card a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      display: block;
+    }
+
+    /* FOOTER */
+    .footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 12px;
+      color: #666;
+      border-top: 1px solid #222;
+      margin-top: 30px;
+    }
+
+    /* MOBILE */
+    @media (max-width: 500px) {
+      .header h1 {
+        font-size: 22px;
+      }
+
+      .card a {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+  <div class="title">📖 Fans Based Manhua</div>
+  <div>
+    <a href="index.html">Home</a>
+  </div>
+</div>
+
+<!-- HEADER -->
+<div class="header">
+  <h1>Welcome to Fans Based Manhua World</h1>
+  <p>Read your favorite manhua anytime, anywhere</p>
+</div>
+
+<!-- CONTENT -->
+<div class="container">
+
+  <div class="card">
+    <a href="heavenbreaker/index.html">Heaven-Breaker Protocol: Rise of the Anomaly</a>
+  </div>
+
+<div class="card">
+    <a href="primordiallord/index.html">Primordial Lord: Mutation Sovereign</a>
+  </div>
+
+  <div class="card">
+    <a href="collectingfragments/index.html">I Become Stronger by Collecting Fragments</a>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  © 2026 Manhua World | All Rights Reserved
+</div>
+
+</body>
+</html>
